@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TomaEstado</string>
+    <string name="title_activity_activity_login">Login</string>
+    <string name="title_activity_activity_splash">Toma Estado</string>
 </resources>
