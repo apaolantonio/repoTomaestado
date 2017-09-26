@@ -7,12 +7,7 @@
     <RelativeLayout
         android:id="@+id/RLayTomarEstado"
         android:layout_width="match_parent"
-        android:layout_height="431dp"
-        android:paddingBottom="16dp"
-        android:paddingLeft="64dp"
-        android:paddingRight="16dp"
-        android:paddingTop="64dp" >
-
+        android:layout_height="match_parent">
 
 
         <EditText
@@ -20,12 +15,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="50dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
             android:ems="10"
-            android:textColorHint="#808080"
+            android:hint="Usuario"
             android:inputType="number"
-            android:hint="Usuario" />
+            android:textColorHint="#808080" />
 
         <!-- Label Nombre -->
 
@@ -38,8 +33,8 @@
             android:layout_marginTop="50dp"
             android:ems="10"
             android:hint="Contraseña"
-            android:textColorHint="#808080"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColorHint="#808080" />
 
         <Button
             android:id="@+id/button1"
@@ -48,10 +43,10 @@
             android:layout_below="@+id/etxPass"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:text="Administrador"
             android:background="@drawable/estiloboton"
-            android:textColor="#FFFFFF"
-            android:onClick="ir" />
+            android:onClick="ir"
+            android:text="Administrador"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button2"
@@ -60,10 +55,10 @@
             android:layout_below="@+id/button1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:text="Operario"
             android:background="@drawable/estiloboton"
-            android:textColor="#FFFFFF"
-            android:onClick="irOperario"/>
+            android:onClick="irOperario"
+            android:text="Operario"
+            android:textColor="#FFFFFF" />
 
     </RelativeLayout>
 

@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:AppTomaEstado="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.ActivityLogin" >
+
+    <item
+        android:id="@+id/itemGeolocalizacion"
+        android:title="Geolocalizacion"/>
+    <item android:id="@+id/itemExportar"
+        android:title="Exportar BD">
+    </item>
+    <item android:id="@+id/itemEliminar"
+        android:title="Eliminar datos">
+    </item>
+
+
+</menu>
