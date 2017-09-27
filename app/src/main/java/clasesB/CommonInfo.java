@@ -18,6 +18,7 @@ public class CommonInfo {
     public static final String KEY_BUNDLE_EMPLEADO = "bundle-empleado";
     public static final String KEY_BUNDLE_FECHA = "bundle-fecha";
     public static final String KEY_BUNDLE_POSITION="bundle-position";
+    public static final String KEY_BUNDLE_MENSAJE="bundle-mensaje";
 
 
     public static final String DATE_FORMAT = "dd/MM/yyyy";

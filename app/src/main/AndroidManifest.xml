@@ -42,15 +42,44 @@
         <activity
             android:name=".activities.ActivityRutas"
             android:label="@string/title_activity_ruta"/>
-        <activity
-            android:name=".activities.ActivityMedidores"
-            android:label="@string/title_activity_medidor"/>
+
         <activity
             android:name=".activities.ActivityEstadistica"
             android:label="@string/title_activity_estadistica"/>
         <activity
+            android:name=".activities.ActivityMedidores"
+            android:label="@string/title_activity_medidor"
+            android:parentActivityName=".activities.ActivityRutas" >
+
+            <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityRutas" />
+        </activity>
+
+        <activity
             android:name=".activities.ActivityTomarEstado"
-            android:label="@string/title_activity_estadistica"/>
+            android:label="@string/title_activity_tomarestado"
+            android:parentActivityName=".activities.ActivityMedidores" >
+
+            <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.ActivityMedidores" />
+        </activity>
+
+        <activity
+            android:name=".activities.ActivityCheckOrdenativo"
+            android:label="@string/title_activity_ordenativo" >
+        </activity>
+        <activity
+            android:name=".activities.ActivityCheckMensaje"
+            android:label="@string/title_activity_mensaje" >
+        </activity>
+        <activity
+            android:name=".activities.ActivityCheckUbicacion"
+            android:label="@string/title_activity_ubicacion" >
+        </activity>
     </application>
 
 </manifest>

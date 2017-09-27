@@ -4,7 +4,11 @@
     <string name="title_activity_activity_splash">Toma Estado</string>
     <string name="title_activity_admin">Administrador</string>
     <string name="title_activity_ruta">Rutas</string>
-    <string name="title_activity_medidor">Medidor</string>
+    <string name="title_activity_medidor">Medidores</string>
     <string name="title_activity_estadistica">Estadistica</string>
+    <string name="title_activity_tomarestado">Toma Estado</string>
+    <string name="title_activity_ordenativo">Ordenativos</string>
+    <string name="title_activity_mensaje">Mensajes</string>
+    <string name="title_activity_ubicacion">Ubicacion</string>
 
 </resources>

@@ -751,6 +751,7 @@ public class ActivityTomarEstado extends Activity implements LocationListener{
         recurso.putSerializable(CommonInfo.KEY_BUNDLE_MEDIDOR, medidor);
         recurso.putSerializable(CommonInfo.KEY_BUNDLE_RUTA, ruta);
         recurso.putSerializable(CommonInfo.KEY_BUNDLE_POSITION, position-1);
+        recurso.putString(CommonInfo.KEY_BUNDLE_MENSAJE,obtenerMensaje(medidor));
 
 
         intento.putExtras(recurso);
