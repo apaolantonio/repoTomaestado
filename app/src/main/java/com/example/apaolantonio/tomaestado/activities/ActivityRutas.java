@@ -7,6 +7,7 @@ import model.RutaDataBaseAdapter;
 import model.AppDataBaseHelper;
 
 
+import android.support.v7.app.AppCompatActivity;
 import android.widget.SimpleCursorAdapter;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -28,7 +29,7 @@ import android.widget.SearchView;
 import com.example.apaolantonio.tomaestado.R;
 
 
-public class ActivityRutas extends Activity {
+public class ActivityRutas extends AppCompatActivity {
 
     private ListView lstRuta;
     private Ruta rutaSeleccionada;
