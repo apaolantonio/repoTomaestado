@@ -39,6 +39,15 @@
             android:name=".activities.ActivityAdmin"
             android:label="@string/title_activity_admin"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name=".activities.ActivityRutas"
+            android:label="@string/title_activity_ruta"/>
+        <activity
+            android:name=".activities.ActivityMedidores"
+            android:label="@string/title_activity_medidor"/>
+        <activity
+            android:name=".activities.ActivityEstadistica"
+            android:label="@string/title_activity_estadistica"/>
     </application>
 
 </manifest>

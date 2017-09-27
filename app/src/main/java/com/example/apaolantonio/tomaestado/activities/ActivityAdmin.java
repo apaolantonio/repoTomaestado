@@ -3,6 +3,7 @@ package com.example.apaolantonio.tomaestado.activities;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Environment;
@@ -24,6 +25,7 @@ import clases.Mensaje;
 import clases.Ordenativo;
 import clases.Ruta;
 import clases.Ubicacion;
+import clasesB.CommonInfo;
 import model.CaptorDataBaseAdapter;
 import model.MedidorDataBaseAdapter;
 import model.MensajeDataBaseAdapter;
@@ -82,7 +84,7 @@ public class ActivityAdmin extends Activity{
             public void onClick(View v) {
                 //ImageView imgD = (ImageView) findViewById(R.id.imgDatos);
                 //imgD.setBackgroundColor(Color.parseColor("#9975E7"));
-                //irModoOperario();
+                irModoOperario();
                 Toast.makeText(getApplicationContext(), "operario", Toast.LENGTH_SHORT).show();
             }
         });
@@ -315,6 +317,14 @@ public class ActivityAdmin extends Activity{
 			Toast.makeText(getApplicationContext(),""+ captor.getLegajo(), Toast.LENGTH_SHORT).show();
 			Toast.makeText(getApplicationContext(),""+ captor.getNombre(), Toast.LENGTH_SHORT).show();
 			Toast.makeText(getApplicationContext(),""+ captor.getPass(), Toast.LENGTH_SHORT).show();*/
+    }
+
+    public void irModoOperario()
+    {
+        CommonInfo.ADMINISTRADOR=0;
+        Intent intento = new Intent(this,ActivityRutas.class);
+        startActivity(intento);
+
     }
 
 
