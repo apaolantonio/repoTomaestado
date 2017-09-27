@@ -10,7 +10,6 @@ import model.AppDataBaseHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.SimpleCursorAdapter;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;

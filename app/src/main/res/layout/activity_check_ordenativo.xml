@@ -1,0 +1,62 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+        <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" >
+
+			<ListView
+			    android:id="@+id/lstOrdenativo"
+			    android:layout_width="fill_parent"
+			    android:layout_height="418dp" >
+		
+		    </ListView>
+		</LinearLayout>
+        
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	        
+	        <Button
+		        android:id="@+id/btnAceptarOrdenativo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="btnAceptarOrdenativo"
+		        android:text="Aceptar"
+		        android:background="@drawable/estiloboton"
+       			android:textColor="#FFFFFF" />
+	        
+	        <Button
+		        android:id="@+id/btnCancelarOrdenativo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:onClick="btnCancelarOrdenativo"
+		        android:text="Cancelar"
+		        android:background="@drawable/estiloboton"
+        		android:textColor="#FFFFFF" />
+	    
+
+	</LinearLayout>
+    </TableRow>
+
+</TableLayout>

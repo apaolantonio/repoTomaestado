@@ -1,0 +1,204 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<EditText
+    android:id="@+id/editTextTomarEstado"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="150dp"
+    android:ems="10"
+    android:inputType="number"
+    android:textSize="50sp" 
+    android:gravity="center"/>
+    
+    <Button
+        android:id="@+id/botonTomarEstado"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/editTextTomarEstado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:onClick="TomarEstado"
+        android:text="Tomar estado" 
+        android:background="@drawable/estiloboton"
+        android:textColor="#FFFFFF"/>
+		
+    <Button
+        android:id="@+id/botonProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="botonProximo"
+        android:text="Próximo" 
+        android:background="@drawable/estiloboton"
+        android:textColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/NroRuta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nro Ruta: " />
+
+                <TextView
+                    android:id="@+id/id_ruta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/NroMedidor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nro Medidor: " />
+
+                <TextView
+                    android:id="@+id/id_medidor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/idCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cliente: " />
+
+                <TextView
+                    android:id="@+id/id_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/direccionCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección: " />
+
+                <TextView
+                    android:id="@+id/id_direccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/txvtarifa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarifa: " />
+
+                <TextView
+                    android:id="@+id/txvid_tarifa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/txvubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación: " />
+
+                <TextView
+                    android:id="@+id/txvid_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/txvMedReal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txv_MedReal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvMedidorTomado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/botonTomarEstado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="" />
+
+
+      <TextView
+          android:id="@+id/txvid_mensaje"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/editTextTomarEstado"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="40dp"
+          android:text="TextView" />
+
+      <ImageButton
+          android:id="@+id/imageButton1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@+id/editTextTomarEstado"
+          android:layout_marginTop="22dp"
+          android:layout_toRightOf="@+id/editTextTomarEstado"
+          android:background="@android:color/transparent"
+          android:onClick="opciones"
+          android:src="@android:drawable/ic_input_add"/>
+
+      <ImageView
+          android:id="@+id/ivIntentoCamara"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          />
+
+</RelativeLayout>

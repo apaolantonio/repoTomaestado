@@ -48,6 +48,9 @@
         <activity
             android:name=".activities.ActivityEstadistica"
             android:label="@string/title_activity_estadistica"/>
+        <activity
+            android:name=".activities.ActivityTomarEstado"
+            android:label="@string/title_activity_estadistica"/>
     </application>
 
 </manifest>
