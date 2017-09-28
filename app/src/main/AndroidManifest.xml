@@ -18,9 +18,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/epe_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/epe_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -48,14 +48,7 @@
             android:label="@string/title_activity_estadistica"/>
         <activity
             android:name=".activities.ActivityMedidores"
-            android:label="@string/title_activity_medidor"
-            android:parentActivityName=".activities.ActivityRutas" >
-
-            <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityRutas" />
-        </activity>
+            android:label="@string/title_activity_medidor"/>
 
         <activity
             android:name=".activities.ActivityTomarEstado"
@@ -79,6 +72,14 @@
         <activity
             android:name=".activities.ActivityCheckUbicacion"
             android:label="@string/title_activity_ubicacion" >
+        </activity>
+        <activity
+            android:name=".activities.ActivityMedidoresNoIncorporados"
+            android:label="@string/title_activity_medidoresni" >
+        </activity>
+        <activity
+            android:name=".activities.ActivityMedidoresCD"
+            android:label="@string/title_activity_medidorescd" >
         </activity>
     </application>
 

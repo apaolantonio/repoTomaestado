@@ -681,7 +681,7 @@ public class ActivityTomarEstado extends Activity implements LocationListener{
         btnTomarEstado= (Button) findViewById(R.id.botonTomarEstado);
         btnTomarEstado.setEnabled(false);
         btnTomarEstado.setBackgroundResource(R.drawable.estilobotondisabled);
-
+        
         menu.getItem(0).setEnabled(false);
         menu.getItem(1).setEnabled(true);
         menu.getItem(2).setEnabled(true);

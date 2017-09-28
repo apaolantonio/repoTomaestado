@@ -10,5 +10,8 @@
     <string name="title_activity_ordenativo">Ordenativos</string>
     <string name="title_activity_mensaje">Mensajes</string>
     <string name="title_activity_ubicacion">Ubicacion</string>
+    <string name="title_activity_medidoresni">No Incorporados</string>
+    <string name="title_activity_medidorescd">Conexión Directa</string>
+
 
 </resources>
