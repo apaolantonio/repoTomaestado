@@ -35,6 +35,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Vibrator;
 import android.provider.MediaStore;
+import android.support.v7.app.AppCompatActivity;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -50,7 +51,7 @@ import android.widget.Toast;
 
 import com.example.apaolantonio.tomaestado.R;
 
-public class ActivityTomarEstado extends Activity implements LocationListener{
+public class ActivityTomarEstado extends AppCompatActivity implements LocationListener{
 
 
     private EstadoDataBaseAdapter dbHelper;
@@ -125,8 +126,6 @@ public class ActivityTomarEstado extends Activity implements LocationListener{
         editTextEstado = (EditText) findViewById(R.id.editTextTomarEstado);
         editTextEstado.addTextChangedListener(new EstadoWatcher(editTextEstado,true));
         editTextEstado.setText("");
-
-        System.out.print("holaaa");
 
         if(medidor.getValidacion()!=0)
         {
@@ -681,7 +680,7 @@ public class ActivityTomarEstado extends Activity implements LocationListener{
         btnTomarEstado= (Button) findViewById(R.id.botonTomarEstado);
         btnTomarEstado.setEnabled(false);
         btnTomarEstado.setBackgroundResource(R.drawable.estilobotondisabled);
-        
+
         menu.getItem(0).setEnabled(false);
         menu.getItem(1).setEnabled(true);
         menu.getItem(2).setEnabled(true);

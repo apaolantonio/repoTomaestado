@@ -52,14 +52,7 @@
 
         <activity
             android:name=".activities.ActivityTomarEstado"
-            android:label="@string/title_activity_tomarestado"
-            android:parentActivityName=".activities.ActivityMedidores" >
-
-            <!-- Aqui tendras que poner el nombre de la actividad que quieras que sea el padre -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.ActivityMedidores" />
-        </activity>
+            android:label="@string/title_activity_tomarestado" />
 
         <activity
             android:name=".activities.ActivityCheckOrdenativo"
