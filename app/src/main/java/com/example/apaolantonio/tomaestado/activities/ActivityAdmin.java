@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Environment;
@@ -25,6 +26,7 @@ import clases.Mensaje;
 import clases.Ordenativo;
 import clases.Ruta;
 import clases.Ubicacion;
+import clasesB.BackUpManager;
 import clasesB.CommonInfo;
 import model.CaptorDataBaseAdapter;
 import model.MedidorDataBaseAdapter;
@@ -94,7 +96,7 @@ public class ActivityAdmin extends Activity{
             public void onClick(View v) {
                 //ImageView imgD = (ImageView) findViewById(R.id.imgDatos);
                 //imgD.setBackgroundColor(Color.parseColor("#9975E7"));
-               // popupBackup();
+                popupBackup();
                 Toast.makeText(getApplicationContext(), "backup", Toast.LENGTH_SHORT).show();
             }
         });
@@ -108,6 +110,65 @@ public class ActivityAdmin extends Activity{
                 Toast.makeText(getApplicationContext(), "abm usuarios", Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+
+    public void popupBackup()
+    {
+        String title="BackUp";
+        final String[] opciones = {"Realizar Backup", "Restaurar Backup"};
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setItems(opciones, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+
+                switch(opciones[item])
+                {
+                    case "Realizar Backup": realizarBackUp(); break;
+                    case "Restaurar Backup": restaurarBackUp(); break;
+                }
+
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    public void realizarBackUp()
+    {
+        BackUpManager back = new BackUpManager(getApplicationContext());
+
+        back.crearBackUp();
+
+
+			/*MensajeDataBaseAdapter dbHelperM;
+			dbHelperM = MensajeDataBaseAdapter.getInstance(getApplicationContext());
+
+			dbHelperM.abrir();
+			dbHelperM.eliminarTodos();
+			dbHelperM.cerrar();*/
+
+
+    }
+
+    public void restaurarBackUp()
+    {
+        BackUpManager back = new BackUpManager(getApplicationContext());
+
+        if(back.restaurarBackUp()==true)
+        {
+            Toast.makeText(getApplicationContext(), "Copia exitosa", Toast.LENGTH_SHORT).show();}
+
+
+			/*MensajeDataBaseAdapter dbHelperM;
+			dbHelperM = MensajeDataBaseAdapter.getInstance(getApplicationContext());
+
+			dbHelperM.abrir();
+			dbHelperM.eliminarTodos();
+			dbHelperM.cerrar();*/
+
 
     }
 
