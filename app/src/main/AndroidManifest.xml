@@ -74,6 +74,14 @@
             android:name=".activities.ActivityMedidoresCD"
             android:label="@string/title_activity_medidorescd" >
         </activity>
+        <activity
+            android:name=".activities.ActivityABM"
+            android:label="@string/title_activity_activity_abm" >
+        </activity>
+        <activity
+            android:name=".activities.ActivityBM"
+            android:label="@string/title_activity_activity_bm" >
+        </activity>
     </application>
 
 </manifest>

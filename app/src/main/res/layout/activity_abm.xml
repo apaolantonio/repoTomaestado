@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/etxEmpleadoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Nombre y apellido"
+        android:inputType="textCapWords">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etxEmpleadoLegajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxEmpleadoNombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Legajo"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etxPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxEmpleadoLegajo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/checkEmpleadoAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etxPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Administrador" />
+
+    <Button
+        android:id="@+id/btnAgregarEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etxEmpleadoLegajo"
+        android:layout_alignRight="@+id/etxPass"
+        android:layout_below="@+id/checkEmpleadoAdmin"
+        android:layout_marginTop="32dp"
+        android:text="Agregar"
+        android:background="@drawable/estiloboton"
+        android:textColor="#FFFFFF" 
+        android:onClick="btnAgregarEmpleado"/>
+
+</RelativeLayout>

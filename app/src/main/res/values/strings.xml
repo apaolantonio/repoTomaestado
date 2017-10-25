@@ -12,6 +12,8 @@
     <string name="title_activity_ubicacion">Ubicacion</string>
     <string name="title_activity_medidoresni">No Incorporados</string>
     <string name="title_activity_medidorescd">Conexión Directa</string>
+    <string name="title_activity_activity_abm">Agregar usuario</string>
+    <string name="title_activity_activity_bm">Lista de usuarios</string>
 
 
 </resources>
